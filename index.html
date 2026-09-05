@@ -1,16 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description" content="Página inicial - Câmara de Comércio.">
+
+    <title>WDD 231 – Desenvolvimento Frontend para Web I - Luciano Piechnik</title>
+
+    <meta name="author" content="Luciano Milani Piechnik">
+
+    <title>Luciano Piechnik | WDD231</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/maior.css">
+
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
 </head>
 
 <body>
-    <h1>Luciano Piechnik</h1>
 
-    <p>Software Developer</p>
+    <header>
+        <div class="cabecalho">
+
+            <a class="marca" href="index.html" aria-label="Página inicial">
+                <img src="imagens/logo.webp" alt="Logotipo de Luciano Piechnik">
+                <span>Câmara de Comércio de Curitiba</span>
+            </a>
+
+            <button id="botaoMenu" class="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="menuNavegacao">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="menuNavegacao" class="navegacao">
+            <a class="ativo" href="index.html">Página Inicial</a>
+            <a href="#">Projeto da Câmara</a>
+            <a href="#">Projeto Final</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Página Inicial</h1>
+
+        <section class="sobre">
+            <h2>Sobre Mim</h2>
+
+            <div class="sobre-conteudo">
+                <div>
+                    <p>
+                        Olá! Meu nome é <strong>Luciano Piechnik</strong> e sou
+                        estudante de Desenvolvimento de Software.
+                    </p>
+
+                    <p>
+                        Atualmente estou desenvolvendo minhas habilidades em
+                        programação, desenvolvimento web, HTML, CSS e
+                        JavaScript através do curso WDD231.
+                    </p>
+
+                    <p>
+                        Sou do estado do <strong>Paraná, Brasil</strong>, e
+                        estou construindo projetos para aprimorar meus
+                        conhecimentos em desenvolvimento web.
+                    </p>
+                </div>
+
+                <div class="foto-placeholder">
+                    <img src="imagens/perfil.webp" alt="Foto de Luciano Milani Piechnik" width="200">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="localizacao">
+            <h2>Paraná, Brasil</h2>
+
+            <div class="localizacao-conteudo">
+                <div class="mapa-placeholder" aria-label="Mapa ilustrativo do Paraná">
+                    <span>PARANÁ</span>
+                </div>
+
+                <p>
+                    Estudante de Desenvolvimento de Software,
+                    localizado no estado do Paraná.
+                </p>
+            </div>
+        </section>
+
+        <section class="certificado">
+            <h2>Cursos de Certificação Web</h2>
+
+            <div class="filtros">
+                <button id="todos" class="filtro ativo">Todos</button>
+                <button id="wdd" class="filtro">WDD</button>
+                <button id="cse" class="filtro">CSE</button>
+            </div>
+
+            <p class="creditos">
+                Créditos exibidos:
+                <strong><span id="totalCreditos">0</span></strong>
+            </p>
+
+            <div id="listaCursos" class="lista-cursos">
+                <!-- Os cursos serão inseridos pelo JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="redes-sociais">
+            <a href="https://github.com/lmpiechnik" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub de Luciano M. P.">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/lucianopiechnik" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn de Luciano M. P.">
+                LinkedIn
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                Instagram
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="anoAtual"></span>
+            Luciano Piechnik | Paraná, Brasil
+        </p>
+
+        <p id="ultimaModificacao"></p>
+
+    </footer>
+
 </body>
 
 </html>

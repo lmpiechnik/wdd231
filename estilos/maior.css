@@ -1,0 +1,85 @@
+@media screen and (min-width: 700px) {
+
+    .cabecalho {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .navegacao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .navegacao a {
+        border-top: none;
+        border-bottom: 4px solid transparent;
+        padding: 1rem 1.5rem;
+    }
+
+    .navegacao a:hover,
+    .navegacao a:focus,
+    .navegacao a.ativo {
+        border-bottom-color: var(--cor-secundaria);
+    }
+
+    main {
+        padding-top: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .localizacao-conteudo {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .filtros {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .filtro {
+        min-width: 120px;
+    }
+
+    .lista-cursos {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.5rem;
+    }
+
+    .curso {
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .lista-cursos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 3fr 1fr;
+    }
+}
