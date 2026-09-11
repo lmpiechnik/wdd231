@@ -1,7 +1,7 @@
 {
     "members": [
         {
-            "name": "Curitiba Tecnologia",
+            "name": "Technology",
             "address": "Rua XV de Novembro, 1000, Centro, Curitiba - PR",
             "phone": "(41) 3333-1000",
             "phoneLink": "+554133331000",
@@ -11,7 +11,7 @@
             "description": "Empresa especializada em soluções digitais e tecnologia empresarial."
         },
         {
-            "name": "Paraná Contabilidade",
+            "name": "NS Contabilidade",
             "address": "Rua Marechal Deodoro, 850, Centro, Curitiba - PR",
             "phone": "(41) 3333-2000",
             "phoneLink": "+554133332000",
@@ -21,7 +21,7 @@
             "description": "Serviços de contabilidade e consultoria para pequenas e médias empresas."
         },
         {
-            "name": "Sul Design Studio",
+            "name": "Graphic Design",
             "address": "Alameda Dr. Carlos de Carvalho, 450, Batel, Curitiba - PR",
             "phone": "(41) 3333-3000",
             "phoneLink": "+554133333000",
@@ -31,7 +31,7 @@
             "description": "Estúdio criativo especializado em identidade visual e comunicação."
         },
         {
-            "name": "Mercado Central Curitiba",
+            "name": "Mercado Central",
             "address": "Rua General Carneiro, 300, Centro, Curitiba - PR",
             "phone": "(41) 3333-4000",
             "phoneLink": "+554133334000",
@@ -51,17 +51,17 @@
             "description": "Empresa do setor de construção civil e desenvolvimento imobiliário."
         },
         {
-            "name": "Café Jardim Botânico",
+            "name": "Jardim Botânico Shopping",
             "address": "Avenida Prefeito Lothário Meissner, 1200, Jardim Botânico, Curitiba - PR",
             "phone": "(41) 3333-6000",
             "phoneLink": "+554133336000",
             "website": "https://example.com",
             "image": "empresa6.webp",
             "membershipLevel": 1,
-            "description": "Cafeteria e espaço de convivência voltado para moradores e visitantes."
+            "description": "Comércio e espaço de convivência voltado para moradores e visitantes."
         },
         {
-            "name": "Logística Paraná Express",
+            "name": "Paraná Express",
             "address": "Rua João Negrão, 1500, Rebouças, Curitiba - PR",
             "phone": "(41) 3333-7000",
             "phoneLink": "+554133337000",

@@ -89,3 +89,20 @@
     }
 
 }
+
+/* =================================
+   INÍCIO - TELAS MAIORES
+================================= */
+
+@media screen and (min-width: 700px) {
+
+    .home-cards {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .home-card {
+        min-height: 300px;
+    }
+
+}
