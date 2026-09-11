@@ -19,7 +19,7 @@ async function getMembers() {
 
     try {
 
-        const response = await fetch("dados/membros.json");
+        const response = await fetch("data/membros.json");
 
         if (!response.ok) {
             throw new Error("Não foi possível carregar os dados dos membros.");
