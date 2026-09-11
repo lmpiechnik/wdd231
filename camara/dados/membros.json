@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "Curitiba Tecnologia",
+            "address": "Rua XV de Novembro, 1000, Centro, Curitiba - PR",
+            "phone": "(41) 3333-1000",
+            "phoneLink": "+554133331000",
+            "website": "https://example.com",
+            "image": "empresa1.webp",
+            "membershipLevel": 3,
+            "description": "Empresa especializada em soluções digitais e tecnologia empresarial."
+        },
+        {
+            "name": "Paraná Contabilidade",
+            "address": "Rua Marechal Deodoro, 850, Centro, Curitiba - PR",
+            "phone": "(41) 3333-2000",
+            "phoneLink": "+554133332000",
+            "website": "https://example.com",
+            "image": "empresa2.webp",
+            "membershipLevel": 2,
+            "description": "Serviços de contabilidade e consultoria para pequenas e médias empresas."
+        },
+        {
+            "name": "Sul Design Studio",
+            "address": "Alameda Dr. Carlos de Carvalho, 450, Batel, Curitiba - PR",
+            "phone": "(41) 3333-3000",
+            "phoneLink": "+554133333000",
+            "website": "https://example.com",
+            "image": "empresa3.webp",
+            "membershipLevel": 1,
+            "description": "Estúdio criativo especializado em identidade visual e comunicação."
+        },
+        {
+            "name": "Mercado Central Curitiba",
+            "address": "Rua General Carneiro, 300, Centro, Curitiba - PR",
+            "phone": "(41) 3333-4000",
+            "phoneLink": "+554133334000",
+            "website": "https://example.com",
+            "image": "empresa4.webp",
+            "membershipLevel": 3,
+            "description": "Comércio local com produtos, alimentos e serviços para a comunidade."
+        },
+        {
+            "name": "Construtora Araucária",
+            "address": "Rua Comendador Araújo, 700, Batel, Curitiba - PR",
+            "phone": "(41) 3333-5000",
+            "phoneLink": "+554133335000",
+            "website": "https://example.com",
+            "image": "empresa5.webp",
+            "membershipLevel": 2,
+            "description": "Empresa do setor de construção civil e desenvolvimento imobiliário."
+        },
+        {
+            "name": "Café Jardim Botânico",
+            "address": "Avenida Prefeito Lothário Meissner, 1200, Jardim Botânico, Curitiba - PR",
+            "phone": "(41) 3333-6000",
+            "phoneLink": "+554133336000",
+            "website": "https://example.com",
+            "image": "empresa6.webp",
+            "membershipLevel": 1,
+            "description": "Cafeteria e espaço de convivência voltado para moradores e visitantes."
+        },
+        {
+            "name": "Logística Paraná Express",
+            "address": "Rua João Negrão, 1500, Rebouças, Curitiba - PR",
+            "phone": "(41) 3333-7000",
+            "phoneLink": "+554133337000",
+            "website": "https://example.com",
+            "image": "empresa7.webp",
+            "membershipLevel": 2,
+            "description": "Serviços de transporte, logística e distribuição para empresas."
+        }
+    ]
+}

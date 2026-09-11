@@ -1,0 +1,489 @@
+/* ================================
+   VARIÁVEIS
+================================ */
+
+:root {
+    --primary-color: #006b3f;
+    --primary-dark: #004d2d;
+    --secondary-color: #174a7e;
+    --accent-color: #d4a72c;
+
+    --background-color: #f5f7f6;
+    --white-color: #ffffff;
+    --text-color: #202b25;
+    --muted-color: #5d6963;
+    --border-color: #d9e0dc;
+
+    --gold-color: #c99600;
+    --silver-color: #727b80;
+
+    --shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    --max-width: 1200px;
+}
+
+
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+.container {
+    width: min(92%, var(--max-width));
+    margin: 0 auto;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+.site-header {
+    background-color: var(--white-color);
+    border-bottom: 4px solid var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.header-content {
+    width: min(92%, var(--max-width));
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 90px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.brand-city {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+/* ================================
+   MENU
+================================ */
+
+.menu-button {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 5px;
+
+    font-size: 1.4rem;
+
+    cursor: pointer;
+}
+
+.main-navigation {
+    display: none;
+}
+
+.main-navigation.open {
+    display: block;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation a {
+    display: block;
+
+    padding: 0.9rem 1rem;
+
+    color: var(--text-color);
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    background-color: #e8f2ed;
+    color: var(--primary-dark);
+}
+
+.main-navigation a.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/* ================================
+   TÍTULO DA PÁGINA
+================================ */
+
+.page-heading {
+    background:
+        linear-gradient(rgba(0, 77, 45, 0.93),
+            rgba(0, 77, 45, 0.93));
+
+    color: var(--white-color);
+
+    padding: 3rem 0;
+}
+
+.eyebrow {
+    margin: 0 0 0.4rem;
+
+    color: #cce8d9;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.page-heading h1 {
+    margin: 0 0 0.7rem;
+
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.page-heading p:last-child {
+    max-width: 650px;
+    margin: 0;
+
+    color: #eef8f2;
+}
+
+
+/* ================================
+   DIRETÓRIO
+================================ */
+
+.directory-section {
+    padding: 2.5rem 0 4rem;
+}
+
+.directory-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.directory-header h2 {
+    margin: 0 0 0.3rem;
+}
+
+.directory-header p {
+    margin: 0;
+    color: var(--muted-color);
+}
+
+
+/* ================================
+   BOTÕES DE VISUALIZAÇÃO
+================================ */
+
+.view-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-button {
+    border: 2px solid var(--primary-color);
+
+    background-color: var(--white-color);
+    color: var(--primary-color);
+
+    padding: 0.65rem 1rem;
+
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.view-button:hover,
+.view-button:focus {
+    background-color: #e8f2ed;
+}
+
+.view-button.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/* ================================
+   GRADE DOS MEMBROS
+================================ */
+
+.members-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.2rem;
+}
+
+
+/* ================================
+   CARD DO MEMBRO
+================================ */
+
+.member-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--white-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.12);
+}
+
+.member-image {
+    width: 100%;
+    height: 180px;
+
+    object-fit: contain;
+
+    background-color: #f0f3f1;
+
+    padding: 1.5rem;
+}
+
+.member-content {
+    padding: 1.3rem;
+}
+
+.member-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+
+    color: var(--primary-dark);
+
+    font-size: 1.3rem;
+}
+
+.member-info {
+    margin: 0.5rem 0;
+}
+
+.member-info strong {
+    color: var(--text-color);
+}
+
+.member-info a {
+    overflow-wrap: anywhere;
+}
+
+.membership-level {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    padding: 0.3rem 0.7rem;
+
+    border-radius: 20px;
+
+    color: var(--white-color);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.level-1 {
+    background-color: var(--primary-color);
+}
+
+.level-2 {
+    background-color: var(--silver-color);
+}
+
+.level-3 {
+    background-color: var(--gold-color);
+}
+
+
+/* ================================
+   VISUALIZAÇÃO EM LISTA
+================================ */
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.7rem;
+}
+
+.members-list .member-card {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    border-radius: 5px;
+}
+
+.members-list .member-image {
+    width: 100px;
+    height: 100px;
+
+    padding: 0.8rem;
+}
+
+.members-list .member-content {
+    padding: 0.8rem 1rem;
+}
+
+.members-list .member-content h3 {
+    margin-bottom: 0.3rem;
+
+    font-size: 1.1rem;
+}
+
+.members-list .membership-level {
+    margin-bottom: 0.3rem;
+}
+
+.members-list .member-info {
+    margin: 0.2rem 0;
+}
+
+
+/* ================================
+   RODAPÉ
+================================ */
+
+.site-footer {
+    background-color: #10251c;
+    color: #e8f1ec;
+}
+
+.footer-content {
+    width: min(92%, var(--max-width));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    padding: 3rem 0;
+}
+
+.footer-column h2 {
+    margin-top: 0;
+
+    color: var(--white-color);
+
+    font-size: 1.1rem;
+}
+
+.footer-column p {
+    color: #cbd8d1;
+}
+
+.footer-column address {
+    color: #cbd8d1;
+    font-style: normal;
+}
+
+.footer-column a {
+    color: #d7eadf;
+}
+
+.footer-bottom {
+    border-top: 1px solid #355044;
+
+    padding: 1.2rem;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #cbd8d1;
+}
+
+
+/* ================================
+   ACESSIBILIDADE
+================================ */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}

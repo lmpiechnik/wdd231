@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diretório | Câmara de Comércio de Curitiba</title>
+
+    <meta name="description"
+        content="Diretório de empresas e organizações associadas à Câmara de Comércio de Curitiba.">
+
+    <meta name="author" content="Luciano Piechnik">
+
+    <!-- Favicon -->
+    <link rel="icon" href="imagens/favicon.ico" type="image/svg+xml">
+
+    <!-- Meta tags para Facebook / Open Graph -->
+    <meta property="og:title" content="Diretório | Câmara de Comércio de Curitiba">
+    <meta property="og:description"
+        content="Conheça as empresas e organizações associadas à Câmara de Comércio de Curitiba.">
+    <meta property="og:image" content="https://lmpiechnik.github.io/wdd231/camara/imagens/logo.webp">
+    <meta property="og:url" content="https://lmpiechnik.github.io/wdd231/camara/diretorio.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/diretorio.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-content">
+
+            <a class="brand" href="diretorio.html">
+                <img src="imagens/logo4.webp" alt="Logo da Câmara de Comércio de Curitiba" width="80" height="80">
+
+                <div class="brand-text">
+                    <span class="brand-name">Câmara de Comércio</span>
+                    <span class="brand-city">Curitiba</span>
+                </div>
+            </a>
+
+            <button id="menu-button" class="menu-button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav id="main-navigation" class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a class="active" href="diretorio.html">Diretório</a>
+                    </li>
+
+                    <li>
+                        <a href="associe-se.html">Associe-se</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-heading">
+
+            <div class="container">
+
+                <p class="eyebrow">Câmara de Comércio de Curitiba</p>
+
+                <h1>Diretório de Membros</h1>
+
+                <p>
+                    Conheça empresas e organizações que fazem parte da nossa
+                    comunidade empresarial.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="directory-section">
+
+            <div class="container">
+
+                <div class="directory-header">
+
+                    <div>
+                        <h2>Nossos membros</h2>
+
+                        <p id="member-count">
+                            Carregando membros...
+                        </p>
+                    </div>
+
+                    <div class="view-controls">
+
+                        <button id="grid-view" class="view-button active" type="button"
+                            aria-label="Exibir membros em grade" aria-pressed="true">
+                            ▦ Grade
+                        </button>
+
+                        <button id="list-view" class="view-button" type="button" aria-label="Exibir membros em lista"
+                            aria-pressed="false">
+                            ☰ Lista
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div id="members-container" class="members-grid" aria-live="polite">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+
+                <h2>Câmara de Comércio de Curitiba</h2>
+
+                <p>
+                    Fortalecendo empresas e conectando a comunidade
+                    empresarial de Curitiba.
+                </p>
+
+                <address>
+                    Praça Tiradentes<br>
+                    Curitiba - PR<br>
+                    Brasil
+                </address>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>Contato</h2>
+
+                <p>
+                    <a href="mailto:contato@camara-curitiba.example">
+                        contato@camara-curitiba.example
+                    </a>
+                </p>
+
+                <p>
+                    <a href="tel:+554132345678">
+                        (41) 3234-5678
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>Informações</h2>
+
+                <p>
+                    Projeto acadêmico WDD 231
+                </p>
+
+                <p>
+                    Desenvolvido por<br>
+                    <strong>Luciano Piechnik</strong>
+                </p>
+
+                <p>
+                    Última modificação:
+                    <span id="last-modified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Câmara de Comércio de Curitiba
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
