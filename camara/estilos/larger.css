@@ -106,3 +106,42 @@
     }
 
 }
+
+/* =================================
+   INÍCIO - DESTAQUES
+================================= */
+
+@media screen and (min-width: 600px) {
+
+    .spotlight-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =================================
+   INÍCIO - DESKTOP
+================================= */
+
+@media screen and (min-width: 800px) {
+
+    .hero-image {
+        height: 500px;
+    }
+
+    .spotlight-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .join-content {
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+    }
+
+}

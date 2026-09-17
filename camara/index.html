@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Início | Câmara de Comércio de Curitiba</title>
+
+    <meta name="description"
+        content="Câmara de Comércio de Curitiba: conectando empresas, fortalecendo negócios e promovendo o desenvolvimento da comunidade empresarial de Curitiba.">
+
+    <meta name="author" content="Luciano Piechnik">
+
+    <!-- Favicon -->
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Câmara de Comércio de Curitiba">
+    <meta property="og:description" content="Conectando empresas e fortalecendo a comunidade empresarial de Curitiba.">
+    <meta property="og:image" content="https://lmpiechnik.github.io/wdd231/camara/imagens/curitiba-index.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://lmpiechnik.github.io/wdd231/camara/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/inicio.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <!-- =================================
+         CABEÇALHO
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="header-content">
+
+            <a class="brand" href="index.html">
+
+                <img src="imagens/logo4.webp" alt="Logo da Câmara de Comércio de Curitiba" width="80" height="80">
+
+                <div class="brand-text">
+
+                    <span class="brand-name">
+                        Câmara de Comércio
+                    </span>
+
+                    <span class="brand-city">
+                        Curitiba
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- MENU MOBILE -->
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav id="main-navigation" class="main-navigation">
+
+                <ul>
+
+                    <li>
+                        <a class="active" href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="diretorio.html">
+                            Diretório
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="associe-se.html">
+                            Associe-se
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================
+             HERO
+        ================================== -->
+
+        <section class="hero">
+
+            <img class="hero-image" src="imagens/curitiba-index.webp" alt="Vista de Curitiba, Paraná" width="1200"
+                height="500">
+
+            <div class="hero-content">
+
+                <div class="container">
+
+                    <p class="eyebrow">
+                        Câmara de Comércio de Curitiba
+                    </p>
+
+                    <h1>
+                        Conectando empresas,
+                        fortalecendo Curitiba
+                    </h1>
+
+                    <p>
+                        Uma comunidade empresarial criada para aproximar
+                        empresas, incentivar oportunidades e contribuir
+                        para o desenvolvimento econômico de Curitiba.
+                    </p>
+
+                    <a class="hero-button" href="associe-se.html">
+                        Associe-se à Câmara
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             INFORMAÇÕES
+        ================================== -->
+
+        <section class="home-information">
+
+            <div class="container">
+
+                <h2>
+                    Informações da comunidade
+                </h2>
+
+
+                <div class="home-cards">
+
+
+                    <!-- EVENTOS -->
+
+                    <article class="home-card">
+
+                        <div class="home-card-heading">
+
+                            <span class="home-card-icon" aria-hidden="true">
+                                📅
+                            </span>
+
+                            <h3>
+                                Eventos
+                            </h3>
+
+                        </div>
+
+
+                        <div class="event-item">
+
+                            <h4>
+                                Encontro Empresarial de Curitiba
+                            </h4>
+
+                            <p>
+                                20 de setembro de 2026
+                            </p>
+
+                            <p>
+                                19h00 — Centro de Curitiba
+                            </p>
+
+                        </div>
+
+
+                        <div class="event-item">
+
+                            <h4>
+                                Workshop de Empreendedorismo
+                            </h4>
+
+                            <p>
+                                27 de setembro de 2026
+                            </p>
+
+                            <p>
+                                14h00 — Câmara de Comércio
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CLIMA ATUAL -->
+
+                    <article class="home-card">
+
+                        <div class="home-card-heading">
+
+                            <span class="home-card-icon" aria-hidden="true">
+                                🌤️
+                            </span>
+
+                            <h3>
+                                Clima
+                            </h3>
+
+                        </div>
+
+
+                        <div id="current-weather" class="current-weather">
+
+                            <p class="weather-city">
+                                Curitiba, PR
+                            </p>
+
+
+                            <div class="weather-main">
+
+                                <span id="weather-icon" class="weather-icon" aria-hidden="true">
+                                    🌤️
+                                </span>
+
+                                <strong id="current-temperature" class="temperature">
+                                    --°C
+                                </strong>
+
+                            </div>
+
+
+                            <p id="weather-description" class="weather-description">
+                                Carregando clima...
+                            </p>
+
+
+                            <p>
+                                Sensação:
+                                <span id="weather-feels-like">
+                                    --°C
+                                </span>
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PREVISÃO -->
+
+                    <article class="home-card">
+
+                        <div class="home-card-heading">
+
+                            <span class="home-card-icon" aria-hidden="true">
+                                🌦️
+                            </span>
+
+                            <h3>
+                                Previsão do tempo
+                            </h3>
+
+                        </div>
+
+
+                        <div id="forecast-container" class="forecast" aria-live="polite">
+
+                            <div class="forecast-day">
+
+                                <strong>
+                                    Carregando...
+                                </strong>
+
+                                <span>
+                                    🌤️
+                                </span>
+
+                                <span>
+                                    --°C / --°C
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             MEMBROS EM DESTAQUE
+        ================================== -->
+
+        <section class="spotlight-section">
+
+            <div class="container">
+
+                <div class="spotlight-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Nossa comunidade
+                        </p>
+
+                        <h2>
+                            Membros em destaque
+                        </h2>
+
+                        <p>
+                            Conheça algumas das empresas que fazem
+                            parte da Câmara de Comércio de Curitiba.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div id="spotlight-container" class="spotlight-grid" aria-live="polite">
+
+                    <p>
+                        Carregando membros em destaque...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             CHAMADA PARA ASSOCIAÇÃO
+        ================================== -->
+
+        <section class="join-callout">
+
+            <div class="container">
+
+                <div class="join-content">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Faça parte
+                        </p>
+
+                        <h2>
+                            Fortaleça sua empresa junto com nossa comunidade
+                        </h2>
+
+                        <p>
+                            Conheça os benefícios de fazer parte da
+                            Câmara de Comércio de Curitiba.
+                        </p>
+
+                    </div>
+
+
+                    <a class="join-button" href="associe-se.html">
+                        Conheça os planos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         RODAPÉ
+    ================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+
+            <!-- COLUNA 1 -->
+
+            <div class="footer-column">
+
+                <h2>
+                    Câmara de Comércio de Curitiba
+                </h2>
+
+                <p>
+                    Fortalecendo empresas e conectando a comunidade
+                    empresarial de Curitiba.
+                </p>
+
+                <address>
+                    Praça Tiradentes, 50<br>
+                    Curitiba - PR<br>
+                    Brasil
+                </address>
+
+            </div>
+
+
+            <!-- COLUNA 2 -->
+
+            <div class="footer-column">
+
+                <h2>
+                    Contato
+                </h2>
+
+                <p>
+                    <a href="mailto:contato@camara-curitiba.example">
+                        contato@ccc.example
+                    </a>
+                </p>
+
+                <p>
+                    <a href="tel:+554132345678">
+                        (41) 3234-5678
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- COLUNA 3 -->
+
+            <div class="footer-column">
+
+                <h2>
+                    Informações
+                </h2>
+
+                <p>
+                    Projeto acadêmico WDD 231
+                </p>
+
+                <p>
+                    Desenvolvido por<br>
+                    <strong>
+                        Luciano Piechnik
+                    </strong>
+                </p>
+
+                <p>
+                    Última modificação:
+                    <span id="last-modified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+
+                &copy;
+
+                <span id="current-year"></span>
+
+                Câmara de Comércio de Curitiba
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
