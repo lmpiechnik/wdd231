@@ -35,7 +35,7 @@ const spotlightContainer =
    Substitua pelo seu API Key do OpenWeatherMap.
 */
 
-const API_KEY = "e66ef2714a3f79c59202fa85dbdbf492";
+const API_KEY = "MinhaChaveESecreta";
 
 const CITY = "Curitiba,BR";
 
