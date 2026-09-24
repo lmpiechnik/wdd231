@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Associe-se | Câmara de Comércio de Curitiba</title>
+
+    <meta name="description"
+        content="Associe sua empresa à Câmara de Comércio de Curitiba e conheça os benefícios de fazer parte da nossa comunidade empresarial.">
+
+    <meta name="author" content="Luciano Piechnik">
+
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Associe-se | Câmara de Comércio de Curitiba">
+    <meta property="og:description"
+        content="Conheça os níveis de associação e faça parte da Câmara de Comércio de Curitiba.">
+    <meta property="og:image" content="https://lmpiechnik.github.io/wdd231/camara/imagens/logo4.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://lmpiechnik.github.io/wdd231/camara/associacao.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/larger.css">
+    <link rel="stylesheet" href="estilos/associacao.css">
+
+    <script src="scripts/associacao.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-content">
+
+            <a class="brand" href="index.html">
+
+                <img src="imagens/logo4.webp" alt="Logo da Câmara de Comércio de Curitiba" width="80" height="80">
+
+                <div class="brand-text">
+                    <span class="brand-name">
+                        Câmara de Comércio
+                    </span>
+
+                    <span class="brand-city">
+                        Curitiba
+                    </span>
+                </div>
+
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav id="main-navigation" class="main-navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="diretorio.html">
+                            Diretório
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="active" href="associacao.html">
+                            Associe-se
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-heading">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    Faça parte da nossa comunidade
+                </p>
+
+                <h1>
+                    Associe-se à Câmara
+                </h1>
+
+                <p>
+                    Preencha o formulário para solicitar sua associação
+                    à Câmara de Comércio de Curitiba.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="association-section">
+
+            <div class="container">
+
+                <div class="association-layout">
+
+
+                    <!-- FORMULÁRIO -->
+
+                    <div class="association-form-wrapper">
+
+                        <div class="section-heading">
+
+                            <p class="eyebrow">
+                                Solicitação de associação
+                            </p>
+
+                            <h2>
+                                Dados do candidato
+                            </h2>
+
+                            <p>
+                                Preencha seus dados para solicitar
+                                sua associação à Câmara.
+                            </p>
+
+                        </div>
+
+
+                        <form class="association-form" method="get" action="agradecimento.html">
+
+
+                            <div class="form-grid">
+
+
+                                <label>
+                                    Nome
+                                    <input type="text" name="first-name" title="Digite seu nome"
+                                        autocomplete="given-name" required>
+                                </label>
+
+
+                                <label>
+                                    Sobrenome
+                                    <input type="text" name="last-name" title="Digite seu sobrenome"
+                                        autocomplete="family-name" required>
+                                </label>
+
+
+                                <label class="full-width">
+                                    Cargo na organização
+                                    <input type="text" name="organization-title" title="Digite seu cargo na organização"
+                                        autocomplete="organization-title" pattern="[A-Za-zÀ-ÖØ-öø-ÿ -]{7,}"
+                                        minlength="7" placeholder="Ex.: Gerente comercial">
+                                </label>
+
+
+                                <label>
+                                    Endereço de e-mail
+                                    <input type="email" name="email" title="Digite seu endereço de e-mail"
+                                        autocomplete="email" placeholder="exemplo@email.com" required>
+                                </label>
+
+
+                                <label>
+                                    Número de celular
+                                    <input type="tel" name="phone" title="Digite seu número de celular"
+                                        autocomplete="tel" required>
+                                </label>
+
+
+                                <label class="full-width">
+                                    Nome da empresa/organização
+                                    <input type="text" name="organization"
+                                        title="Digite o nome da empresa ou organização" autocomplete="organization"
+                                        required>
+                                </label>
+
+
+                                <fieldset class="membership-fieldset full-width">
+
+                                    <legend>
+                                        Nível de associação
+                                    </legend>
+
+                                    <label class="radio-option">
+                                        <input type="radio" name="membership" value="np" required>
+                                        Associação NP
+                                    </label>
+
+                                    <label class="radio-option">
+                                        <input type="radio" name="membership" value="bronze">
+                                        Associação Bronze
+                                    </label>
+
+                                    <label class="radio-option">
+                                        <input type="radio" name="membership" value="silver">
+                                        Associação Prata
+                                    </label>
+
+                                    <label class="radio-option">
+                                        <input type="radio" name="membership" value="gold">
+                                        Associação Ouro
+                                    </label>
+
+                                </fieldset>
+
+
+                                <label class="full-width">
+                                    Descrição da atividade/organização
+
+                                    <textarea name="description" title="Descreva a atividade ou organização" rows="6"
+                                        placeholder="Conte um pouco sobre sua empresa ou organização."></textarea>
+
+                                </label>
+
+
+                            </div>
+
+
+                            <input type="hidden" name="timestamp" id="timestamp">
+
+
+                            <input class="form-submit" type="submit" value="Enviar solicitação de associação">
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- NÍVEIS -->
+
+                    <aside class="membership-levels">
+
+                        <div class="section-heading">
+
+                            <p class="eyebrow">
+                                Escolha seu nível
+                            </p>
+
+                            <h2>
+                                Níveis de associação
+                            </h2>
+
+                            <p>
+                                Conheça os benefícios de cada categoria.
+                            </p>
+
+                        </div>
+
+
+                        <div class="membership-cards">
+
+
+                            <article class="membership-card level-np">
+
+                                <span class="membership-tag">
+                                    Sem taxa
+                                </span>
+
+                                <h3>
+                                    Associação NP
+                                </h3>
+
+                                <p>
+                                    Para organizações sem fins lucrativos.
+                                </p>
+
+                                <a href="#modal-np" class="modal-link">
+                                    Mais informações
+                                </a>
+
+                            </article>
+
+
+                            <article class="membership-card level-bronze">
+
+                                <span class="membership-tag">
+                                    Bronze
+                                </span>
+
+                                <h3>
+                                    Associação Bronze
+                                </h3>
+
+                                <p>
+                                    Benefícios essenciais para sua empresa.
+                                </p>
+
+                                <a href="#modal-bronze" class="modal-link">
+                                    Mais informações
+                                </a>
+
+                            </article>
+
+
+                            <article class="membership-card level-silver">
+
+                                <span class="membership-tag">
+                                    Prata
+                                </span>
+
+                                <h3>
+                                    Associação Prata
+                                </h3>
+
+                                <p>
+                                    Mais oportunidades de divulgação e eventos.
+                                </p>
+
+                                <a href="#modal-silver" class="modal-link">
+                                    Mais informações
+                                </a>
+
+                            </article>
+
+
+                            <article class="membership-card level-gold">
+
+                                <span class="membership-tag">
+                                    Ouro
+                                </span>
+
+                                <h3>
+                                    Associação Ouro
+                                </h3>
+
+                                <p>
+                                    Benefícios ampliados e maior visibilidade.
+                                </p>
+
+                                <a href="#modal-gold" class="modal-link">
+                                    Mais informações
+                                </a>
+
+                            </article>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MODAL NP -->
+
+        <dialog id="modal-np" class="membership-modal">
+
+            <div class="modal-content">
+
+                <h2>
+                    Associação NP
+                </h2>
+
+                <p>
+                    Destinada a organizações sem fins lucrativos.
+                </p>
+
+                <ul>
+                    <li>Sem taxa de associação.</li>
+                    <li>Acesso à comunidade empresarial.</li>
+                    <li>Participação em eventos selecionados.</li>
+                    <li>Oportunidades de networking.</li>
+                </ul>
+
+                <button class="modal-close" type="button">
+                    Fechar
+                </button>
+
+            </div>
+
+        </dialog>
+
+
+        <!-- MODAL BRONZE -->
+
+        <dialog id="modal-bronze" class="membership-modal">
+
+            <div class="modal-content">
+
+                <h2>
+                    Associação Bronze
+                </h2>
+
+                <p>
+                    Uma opção para empresas que desejam
+                    participar ativamente da comunidade.
+                </p>
+
+                <ul>
+                    <li>Participação em eventos.</li>
+                    <li>Acesso a oportunidades de networking.</li>
+                    <li>Descontos em eventos selecionados.</li>
+                    <li>Comunicação com outros associados.</li>
+                </ul>
+
+                <button class="modal-close" type="button">
+                    Fechar
+                </button>
+
+            </div>
+
+        </dialog>
+
+
+        <!-- MODAL PRATA -->
+
+        <dialog id="modal-silver" class="membership-modal">
+
+            <div class="modal-content">
+
+                <h2>
+                    Associação Prata
+                </h2>
+
+                <p>
+                    Para empresas que desejam ampliar sua
+                    participação e visibilidade.
+                </p>
+
+                <ul>
+                    <li>Todos os benefícios do Bronze.</li>
+                    <li>Descontos ampliados em eventos.</li>
+                    <li>Participação em treinamentos.</li>
+                    <li>Maior destaque na comunicação da Câmara.</li>
+                </ul>
+
+                <button class="modal-close" type="button">
+                    Fechar
+                </button>
+
+            </div>
+
+        </dialog>
+
+
+        <!-- MODAL OURO -->
+
+        <dialog id="modal-gold" class="membership-modal">
+
+            <div class="modal-content">
+
+                <h2>
+                    Associação Ouro
+                </h2>
+
+                <p>
+                    Categoria destinada a empresas que desejam
+                    maior exposição e participação.
+                </p>
+
+                <ul>
+                    <li>Todos os benefícios do Prata.</li>
+                    <li>Posições de destaque na página inicial.</li>
+                    <li>Publicidade em ações da Câmara.</li>
+                    <li>Acesso prioritário a eventos especiais.</li>
+                    <li>Oportunidades ampliadas de networking.</li>
+                </ul>
+
+                <button class="modal-close" type="button">
+                    Fechar
+                </button>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+
+                <h2>
+                    Câmara de Comércio de Curitiba
+                </h2>
+
+                <p>
+                    Fortalecendo empresas e conectando a comunidade
+                    empresarial de Curitiba.
+                </p>
+
+                <address>
+                    Praça Tiradentes, 50<br>
+                    Curitiba - PR<br>
+                    Brasil
+                </address>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>
+                    Contato
+                </h2>
+
+                <p>
+                    <a href="mailto:contato@camara-curitiba.example">
+                        contato@ccc.example
+                    </a>
+                </p>
+
+                <p>
+                    <a href="tel:+554132345678">
+                        (41) 3234-5678
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>
+                    Informações
+                </h2>
+
+                <p>
+                    Projeto acadêmico WDD 231
+                </p>
+
+                <p>
+                    Desenvolvido por<br>
+                    <strong>
+                        Luciano Piechnik
+                    </strong>
+                </p>
+
+                <p>
+                    Última modificação:
+                    <span id="last-modified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Câmara de Comércio de Curitiba
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

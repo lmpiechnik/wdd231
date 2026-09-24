@@ -1,0 +1,450 @@
+/* =================================
+   PÁGINA DE ASSOCIAÇÃO
+================================= */
+
+.association-section {
+    padding: 3rem 0 4rem;
+}
+
+.association-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+
+/* =================================
+   CABEÇALHOS DE SEÇÃO
+================================= */
+
+.section-heading {
+    margin-bottom: 1.5rem;
+}
+
+.section-heading .eyebrow {
+    color: var(--primary-color);
+}
+
+.section-heading h2 {
+    margin: 0 0 0.5rem;
+    color: var(--primary-dark);
+    font-size: 2rem;
+}
+
+.section-heading p:last-child {
+    margin: 0;
+    color: var(--muted-color);
+}
+
+
+/* =================================
+   FORMULÁRIO
+================================= */
+
+.association-form-wrapper {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.association-form {
+    width: 100%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.association-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.association-form input[type="text"],
+.association-form input[type="email"],
+.association-form input[type="tel"],
+.association-form textarea {
+    width: 100%;
+
+    padding: 0.8rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    color: var(--text-color);
+
+    font: inherit;
+}
+
+.association-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.association-form input:focus,
+.association-form textarea:focus {
+    outline: 3px solid rgba(212, 167, 44, 0.35);
+    border-color: var(--primary-color);
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =================================
+   NÍVEL DE ASSOCIAÇÃO
+================================= */
+
+.membership-fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.membership-fieldset legend {
+    padding: 0 0.5rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.radio-option {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 0.6rem !important;
+
+    margin: 0.7rem 0;
+
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+
+.radio-option input {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+
+/* =================================
+   BOTÃO DO FORMULÁRIO
+================================= */
+
+.form-submit {
+    width: 100%;
+
+    margin-top: 1.5rem;
+
+    padding: 0.9rem 1.2rem;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--accent-color);
+    color: #202020;
+
+    font: inherit;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+    background-color: #e3b83e;
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   CARTÕES DOS NÍVEIS
+================================= */
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.4rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    background-color: var(--white-color);
+
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+
+    animation:
+        membership-entry 0.8s ease forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+@keyframes membership-entry {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.membership-card h3 {
+    margin: 0.5rem 0;
+
+    color: var(--primary-dark);
+
+    font-size: 1.25rem;
+}
+
+.membership-card p {
+    color: var(--muted-color);
+}
+
+.membership-tag {
+    display: inline-block;
+
+    padding: 0.3rem 0.7rem;
+
+    border-radius: 20px;
+
+    color: white;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.level-np {
+    border-top: 5px solid var(--primary-color);
+}
+
+.level-np .membership-tag {
+    background-color: var(--primary-color);
+}
+
+.level-bronze {
+    border-top: 5px solid #a56a35;
+}
+
+.level-bronze .membership-tag {
+    background-color: #a56a35;
+}
+
+.level-silver {
+    border-top: 5px solid var(--silver-color);
+}
+
+.level-silver .membership-tag {
+    background-color: var(--silver-color);
+}
+
+.level-gold {
+    border-top: 5px solid var(--gold-color);
+}
+
+.level-gold .membership-tag {
+    background-color: var(--gold-color);
+    color: #202020;
+}
+
+.modal-link {
+    display: inline-block;
+
+    margin-top: 0.5rem;
+
+    color: var(--secondary-color);
+
+    font-weight: 700;
+}
+
+
+/* =================================
+   MODAIS
+================================= */
+
+.membership-modal {
+    width: min(90%, 550px);
+
+    padding: 0;
+
+    border: none;
+    border-radius: 8px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.membership-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+    padding: 2rem;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+
+    color: var(--primary-dark);
+}
+
+.modal-content li {
+    margin-bottom: 0.6rem;
+}
+
+.modal-close {
+    margin-top: 1rem;
+
+    padding: 0.7rem 1.1rem;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    font: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: var(--primary-dark);
+}
+
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media screen and (min-width: 600px) {
+
+    .association-form-wrapper {
+        padding: 2rem;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .association-layout {
+        grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =================================
+   PÁGINA DE AGRADECIMENTO
+================================= */
+
+.confirmation-card {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 2rem;
+
+    background-color: var(--white-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    box-shadow: var(--shadow);
+}
+
+.confirmation-card h2 {
+    margin-top: 0;
+
+    color: var(--primary-dark);
+}
+
+.confirmation-card>p {
+    color: var(--muted-color);
+}
+
+.submitted-data {
+    margin: 2rem 0;
+}
+
+.submitted-data div {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 0.3rem;
+
+    padding: 1rem 0;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.submitted-data dt {
+    color: var(--primary-dark);
+    font-weight: 700;
+}
+
+.submitted-data dd {
+    margin: 0;
+    color: var(--text-color);
+    overflow-wrap: anywhere;
+}
+
+@media screen and (min-width: 600px) {
+
+    .submitted-data div {
+        grid-template-columns: 220px 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+}

@@ -1,5 +1,6 @@
 const listaCursos = document.querySelector("#listaCursos");
 const totalCreditos = document.querySelector("#totalCreditos");
+const infosDoCurso = document.querySelector("#infos-do-curso");
 
 const botaoTodos = document.querySelector("#todos");
 const botaoWdd = document.querySelector("#wdd");
@@ -55,6 +56,10 @@ function mostrarCursos(filtro = "todos") {
             </span>
         `;
 
+        cartao.addEventListener("click", () => {
+            exibirInfosDoCurso(curso);
+        });
+
         listaCursos.appendChild(cartao);
     });
 
@@ -65,6 +70,64 @@ function mostrarCursos(filtro = "todos") {
 
     totalCreditos.textContent = creditos;
 }
+
+
+function exibirInfosDoCurso(curso) {
+
+    infosDoCurso.innerHTML = `
+        <button id="fecharModal" type="button" aria-label="Fechar">
+            ❌
+        </button>
+
+        <h2>${curso.assunto} ${curso.numero}</h2>
+
+        <h3>${curso.titulo}</h3>
+
+        <p>
+            <strong>Créditos:</strong>
+            ${curso.creditos}
+        </p>
+
+        <p>
+            <strong>Certificado:</strong>
+            ${curso.certificado}
+        </p>
+
+        <p>
+            <strong>Descrição:</strong>
+            ${curso.descricao}
+        </p>
+
+        <p>
+            <strong>Arquitetura Tecnológica:</strong>
+            ${curso.tecnologia.join(", ")}
+        </p>
+    `;
+
+    infosDoCurso.showModal();
+
+    const fecharModal = document.querySelector("#fecharModal");
+
+    fecharModal.addEventListener("click", () => {
+        infosDoCurso.close();
+    });
+}
+
+
+infosDoCurso.addEventListener("click", (event) => {
+
+    const retangulo = infosDoCurso.getBoundingClientRect();
+
+    const clicouFora =
+        event.clientX < retangulo.left ||
+        event.clientX > retangulo.right ||
+        event.clientY < retangulo.top ||
+        event.clientY > retangulo.bottom;
+
+    if (clicouFora) {
+        infosDoCurso.close();
+    }
+});
 
 
 function ativarFiltro(botaoSelecionado) {
