@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre Curitiba | Câmara de Comércio de Curitiba</title>
+
+    <meta name="description"
+        content="Conheça alguns dos principais pontos de interesse de Curitiba e descubra características da cidade que tornam a região atrativa para empresas, visitantes e novos negócios.">
+
+    <meta name="author" content="Luciano Piechnik">
+
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Sobre Curitiba | Câmara de Comércio de Curitiba">
+    <meta property="og:description" content="Conheça pontos de interesse e características da região de Curitiba.">
+    <meta property="og:image" content="https://lmpiechnik.github.io/wdd231/camara/imagens/curitiba-index.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://lmpiechnik.github.io/wdd231/camara/sobre.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/larger.css">
+
+    <script type="module" src="scripts/sobre.js"></script>
+
+</head>
+
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-content">
+
+            <a class="brand" href="index.html">
+
+                <img src="imagens/logo4.webp" alt="Logo da Câmara de Comércio de Curitiba" width="80" height="80">
+
+                <div class="brand-text">
+
+                    <span class="brand-name">
+                        Câmara de Comércio
+                    </span>
+
+                    <span class="brand-city">
+                        Curitiba
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="main-navigation">
+                ☰
+            </button>
+
+
+            <nav id="main-navigation" class="main-navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="active" href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="diretorio.html">
+                            Diretório
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="associacao.html">
+                            Associe-se
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-heading">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    Conheça nossa região
+                </p>
+
+                <h1>
+                    Sobre Curitiba
+                </h1>
+
+                <p>
+                    Curitiba combina espaços de inovação, cultura,
+                    natureza e desenvolvimento urbano, criando um
+                    ambiente atrativo para empresas, moradores e visitantes.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="about-section">
+
+            <div class="container">
+
+                <div id="visit-message" class="visit-message" aria-live="polite"></div>
+
+
+                <div class="about-introduction">
+
+                    <p class="eyebrow">
+                        Curitiba em destaque
+                    </p>
+
+                    <h2>
+                        Lugares que representam nossa cidade
+                    </h2>
+
+                    <p>
+                        Conheça alguns dos espaços que fazem parte da
+                        identidade de Curitiba e contribuem para a
+                        experiência de moradores, empreendedores e visitantes.
+                    </p>
+
+                </div>
+
+
+                <div id="places-container" class="places-grid">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+
+                <h2>
+                    Câmara de Comércio de Curitiba
+                </h2>
+
+                <p>
+                    Fortalecendo empresas e conectando a comunidade
+                    empresarial de Curitiba.
+                </p>
+
+                <address>
+                    Praça Tiradentes, 50<br>
+                    Curitiba - PR<br>
+                    Brasil
+                </address>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>
+                    Contato
+                </h2>
+
+                <p>
+                    <a href="mailto:contato@camara-curitiba.example">
+                        contato@ccc.example
+                    </a>
+                </p>
+
+                <p>
+                    <a href="tel:+554132345678">
+                        (41) 3234-5678
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>
+                    Informações
+                </h2>
+
+                <p>
+                    Projeto acadêmico WDD 231
+                </p>
+
+                <p>
+                    Desenvolvido por<br>
+                    <strong>
+                        Luciano Piechnik
+                    </strong>
+                </p>
+
+                <p>
+                    Última modificação:
+                    <span id="last-modified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Câmara de Comércio de Curitiba
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
