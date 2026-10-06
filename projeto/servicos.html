@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serviços de Engenharia | EngenhoMais Engenharia</title>
+
+    <meta name="description"
+        content="Conheça os serviços de engenharia oferecidos pela EngenhoMais Engenharia e encontre uma solução adequada à sua necessidade.">
+    <meta name="author" content="EngenhoMais Engenharia">
+
+    <meta property="og:title" content="Serviços | EngenhoMais Engenharia">
+    <meta property="og:description" content="Conheça nossas soluções e serviços de engenharia.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="imagens/favicon.ico">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+
+    <script type="module" src="scripts/servicos.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a class="logo-link" href="index.html">
+                <img src="imagens/logo.webp" alt="EngenhoMais Engenharia" width="180" height="60">
+            </a>
+
+            <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="site-navigation">
+                ☰
+            </button>
+
+            <nav id="site-navigation" class="site-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="qualificacoes.html">Qualificações</a>
+                <a class="active" href="servicos.html">Serviços</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <div class="container">
+                <span class="eyebrow">SOLUÇÕES TÉCNICAS</span>
+                <h1>Serviços de Engenharia</h1>
+                <p>
+                    Explore nossas áreas de atuação e encontre uma solução
+                    adequada para sua necessidade.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="service-controls">
+                    <label for="service-filter">
+                        Filtrar por categoria
+                    </label>
+
+                    <select id="service-filter">
+                        <option value="todos">Todos os serviços</option>
+                        <option value="civil">Engenharia Civil</option>
+                        <option value="instalacoes">Instalações</option>
+                        <option value="consultoria">Consultoria</option>
+                        <option value="seguranca">Segurança</option>
+                    </select>
+                </div>
+
+                <div id="services-list" class="service-grid">
+                    <p>Carregando serviços...</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal acessível -->
+    <dialog id="service-modal" class="service-modal">
+
+        <div class="modal-content">
+
+            <button id="modal-close" class="modal-close" type="button" aria-label="Fechar detalhes">
+                ×
+            </button>
+
+            <div id="modal-content">
+                <!-- Conteúdo dinâmico -->
+            </div>
+
+        </div>
+
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div>
+                <h2>EngenhoMais Engenharia</h2>
+                <p>Soluções técnicas com conhecimento e responsabilidade.</p>
+            </div>
+
+            <div>
+                <h2>Navegação</h2>
+                <a href="index.html">Início</a>
+                <a href="qualificacoes.html">Qualificações</a>
+            </div>
+
+            <div>
+                <h2>Projeto</h2>
+                <a href="planejamento-do-site.html">Planejamento</a>
+                <a href="atribuicoes.html">Atribuições e fontes</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                    Vídeo de apresentação
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span> EngenhoMais Engenharia.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

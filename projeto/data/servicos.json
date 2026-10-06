@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "nome": "Projeto estrutural",
+        "categoria": "civil",
+        "descricao": "Desenvolvimento e análise de soluções para estruturas de edificações.",
+        "publico": "Residencial e comercial",
+        "modalidade": "Projeto técnico"
+    },
+    {
+        "id": 2,
+        "nome": "Inspeção predial",
+        "categoria": "civil",
+        "descricao": "Avaliação das condições construtivas e identificação de manifestações patológicas.",
+        "publico": "Condomínios e empresas",
+        "modalidade": "Inspeção técnica"
+    },
+    {
+        "id": 3,
+        "nome": "Laudo técnico",
+        "categoria": "consultoria",
+        "descricao": "Elaboração de documentos técnicos com análise e parecer profissional.",
+        "publico": "Empresas e proprietários",
+        "modalidade": "Documento técnico"
+    },
+    {
+        "id": 4,
+        "nome": "Consultoria de engenharia",
+        "categoria": "consultoria",
+        "descricao": "Orientação técnica para tomada de decisões relacionadas à engenharia.",
+        "publico": "Empresas e clientes",
+        "modalidade": "Consultoria"
+    },
+    {
+        "id": 5,
+        "nome": "Acompanhamento de obra",
+        "categoria": "civil",
+        "descricao": "Acompanhamento técnico das atividades realizadas durante a execução.",
+        "publico": "Proprietários e empresas",
+        "modalidade": "Acompanhamento"
+    },
+    {
+        "id": 6,
+        "nome": "Orçamento técnico",
+        "categoria": "civil",
+        "descricao": "Levantamento e organização de informações para estimativas de custos.",
+        "publico": "Empresas e clientes",
+        "modalidade": "Planejamento"
+    },
+    {
+        "id": 7,
+        "nome": "Instalações elétricas",
+        "categoria": "instalacoes",
+        "descricao": "Análise e desenvolvimento de soluções para instalações elétricas.",
+        "publico": "Residencial e comercial",
+        "modalidade": "Projeto técnico"
+    },
+    {
+        "id": 8,
+        "nome": "Instalações hidráulicas",
+        "categoria": "instalacoes",
+        "descricao": "Soluções para sistemas hidráulicos e instalações prediais.",
+        "publico": "Residencial e comercial",
+        "modalidade": "Projeto técnico"
+    },
+    {
+        "id": 9,
+        "nome": "Avaliação de instalações",
+        "categoria": "instalacoes",
+        "descricao": "Análise das condições e funcionamento de instalações prediais.",
+        "publico": "Empresas e condomínios",
+        "modalidade": "Inspeção"
+    },
+    {
+        "id": 10,
+        "nome": "Análise de segurança",
+        "categoria": "seguranca",
+        "descricao": "Avaliação de condições técnicas relacionadas à segurança de edificações.",
+        "publico": "Empresas",
+        "modalidade": "Avaliação técnica"
+    },
+    {
+        "id": 11,
+        "nome": "Plano de manutenção",
+        "categoria": "consultoria",
+        "descricao": "Organização de ações preventivas para conservação de estruturas e instalações.",
+        "publico": "Condomínios e empresas",
+        "modalidade": "Planejamento"
+    },
+    {
+        "id": 12,
+        "nome": "Diagnóstico técnico",
+        "categoria": "consultoria",
+        "descricao": "Investigação de problemas e identificação de possíveis soluções técnicas.",
+        "publico": "Empresas e clientes",
+        "modalidade": "Diagnóstico"
+    },
+    {
+        "id": 13,
+        "nome": "Avaliação de acessibilidade",
+        "categoria": "civil",
+        "descricao": "Análise de condições de acessibilidade em ambientes e edificações.",
+        "publico": "Empresas e condomínios",
+        "modalidade": "Avaliação"
+    },
+    {
+        "id": 14,
+        "nome": "Análise de riscos",
+        "categoria": "seguranca",
+        "descricao": "Identificação de riscos técnicos e apoio na definição de medidas preventivas.",
+        "publico": "Empresas",
+        "modalidade": "Consultoria"
+    },
+    {
+        "id": 15,
+        "nome": "Suporte técnico",
+        "categoria": "consultoria",
+        "descricao": "Atendimento técnico para dúvidas, análises e necessidades específicas.",
+        "publico": "Empresas e clientes",
+        "modalidade": "Suporte"
+    }
+]

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitação recebida | EngenhoMais Engenharia</title>
+
+    <meta name="description" content="Resultado da solicitação de atendimento da EngenhoMais Engenharia.">
+    <meta name="author" content="EngenhoMais Engenharia">
+
+    <link rel="icon" href="imagens/favicon.webp">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a class="logo-link" href="index.html">
+                <img src="imagens/logo/logo.webp" alt="EngenhoMais Engenharia" width="180" height="60">
+            </a>
+
+            <nav class="site-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="qualificacoes.html">Qualificações</a>
+                <a href="servicos.html">Serviços</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="form-result">
+
+                    <span class="eyebrow">SOLICITAÇÃO RECEBIDA</span>
+
+                    <h1>Obrigado pelo contato!</h1>
+
+                    <p>
+                        Confira abaixo os dados enviados no formulário.
+                    </p>
+
+                    <div class="submitted-data">
+                        <h2>Dados enviados</h2>
+
+                        <div id="submitted-content">
+                            <!-- Dados inseridos pelo navegador -->
+                        </div>
+                    </div>
+
+                    <a class="button button-primary" href="index.html">
+                        Voltar para o início
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 EngenhoMais Engenharia.
+            </p>
+        </div>
+    </footer>
+
+    <script type="module">
+        const container = document.querySelector("#submitted-content");
+        const params = new URLSearchParams(window.location.search);
+
+        const fields = [
+            ["Nome", "nome"],
+            ["E-mail", "email"],
+            ["Telefone", "telefone"],
+            ["Serviço", "servico"],
+            ["Mensagem", "mensagem"]
+        ];
+
+        fields.forEach(([label, key]) => {
+            const value = params.get(key) || "Não informado";
+
+            const paragraph = document.createElement("p");
+
+            const strong = document.createElement("strong");
+            strong.textContent = `${label}: `;
+
+            paragraph.append(strong, document.createTextNode(value));
+
+            container.appendChild(paragraph);
+        });
+    </script>
+
+</body>
+
+</html>
