@@ -191,20 +191,17 @@
             </div>
         </section>
 
-        <section class="section contact-section" id="contato">
+
+        <section class="contact-section" id="contato">
             <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Fale conosco</p>
+                <h2>Entre em contato</h2>
 
-                    <h2>Entre em contato</h2>
+                <p>
+                    Preencha o formulário abaixo para entrar em contato
+                    com a EngenhoMais Engenharia.
+                </p>
 
-                    <p>
-                        Preencha o formulário para enviar sua solicitação.
-                        Seus dados serão apresentados na página de confirmação.
-                    </p>
-                </div>
-
-                <form class="contact-form" action="formulario.html" method="get">
+                <form id="contact-form" class="contact-form" action="formulario.html" method="get">
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" autocomplete="name" required>
@@ -224,34 +221,29 @@
                         <label for="assunto">Assunto</label>
                         <select id="assunto" name="assunto" required>
                             <option value="">Selecione uma opção</option>
-                            <option value="informacoes">
-                                Informações
-                            </option>
-                            <option value="servicos">
-                                Serviços
-                            </option>
-                            <option value="orcamento">
-                                Solicitação de orçamento
-                            </option>
-                            <option value="outros">
-                                Outros
-                            </option>
+                            <option value="projeto">Projeto</option>
+                            <option value="consultoria">Consultoria</option>
+                            <option value="inspecao">Inspeção</option>
+                            <option value="instalacoes">Instalações</option>
+                            <option value="outro">Outro</option>
                         </select>
                     </div>
 
-                    <div class="form-group form-group-full">
+                    <div class="form-group">
                         <label for="mensagem">Mensagem</label>
                         <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
                     </div>
 
-                    <div class="form-actions form-group-full">
-                        <button class="button button-primary" type="submit">
+                    <div class="form-actions">
+                        <button type="submit" class="button button-primary">
                             Enviar mensagem
                         </button>
                     </div>
                 </form>
             </div>
         </section>
+
+
     </main>
 
     <footer class="site-footer">
@@ -263,6 +255,12 @@
                     Soluções de engenharia com conhecimento,
                     responsabilidade e compromisso.
                 </p>
+
+                <address>
+                    R. João Marchesini, 139<br>
+                    Prado Velho, Curitiba - PR<br>
+                    80215-432
+                </address>
             </div>
 
             <div>
