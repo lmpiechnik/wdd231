@@ -90,7 +90,7 @@ p {
 .eyebrow {
     display: inline-block;
     margin-bottom: 0.8rem;
-    color: var(--accent-color);
+    color: #D97516;
     font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 0.08em;
